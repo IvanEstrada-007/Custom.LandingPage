@@ -1,0 +1,70 @@
+/* Stylesheet for landing page project 1/18/2023
+font-family: 'Mukta', sans-serif; */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+section#intro {
+	background-image: url("unsplash2.jpg");
+	height: 100%;
+	background-size: cover;
+	display: table;
+	width: 100%;
+}
+
+div#content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+div#content h1 {
+	font-family: 'Mukta', sans-serif;
+	font-size: 5em;
+	color: white;
+	text-shadow: 4px 0px 8px black;
+	letter-spacing: 5px;
+}
+
+a#BTN {
+	text-decoration: none;
+	background-color: orange;
+	color: black;
+	font-size: 2.0em;
+	font-family: 'Mukta', sans-serif;
+	padding: 10px 20px 10px 20px;
+	border-radius: 30px;
+	transition: all 1s;
+}
+
+a#BTN:hover {
+	background-color: white;
+	border-color: orange;
+	border-style: solid;
+	border-width: 3px;
+}
+
+p {
+	font-size: 1.2em;
+	padding: 0px 10px;
+}
+
+/* Media Query Styling for small devices */
+@media screen and (max-width: 768px) {
+
+	div#content h1 {
+		font-size: 3em;
+	}
+
+	a#BTN {
+		font-size: 1.5em;
+	}
+
+	p {
+		display: none;
+	}
+}
